@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clip Studio - Turn long videos into a daily YouTube and TikTok posting queue</title>
+<meta name="description" content="Clip Studio cuts long videos into vertical 9:16 clips and schedules them to YouTube Shorts and TikTok on a fixed daily rhythm.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2300ea90'/%3E%3Cpath d='M12 9v14l11-7z' fill='%2304150d'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/theme.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="/">
+      <span class="logo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+      <span>Clip Studio</span>
+    </a>
+    <nav class="nav">
+      <a class="link hide-sm" href="#features">Features</a>
+      <a class="link hide-sm" href="#how">How it works</a>
+      <a class="link hide-sm" href="#platforms">Platforms</a>
+      <a class="link hide-sm" href="#faq">FAQ</a>
+      <a class="btn small" href="/app">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero container">
+    <span class="pill"><b>New</b> Chapter and transcript aware clipping</span>
+    <h1>Turn every long video into a <span class="grad">daily posting machine</span></h1>
+    <p class="lead">Drop in a list of video links. Clip Studio cuts each one into vertical 9:16 clips, adds your headline, and posts them to YouTube Shorts and TikTok on a steady schedule, while you do something else.</p>
+    <div class="cta">
+      <a class="btn large" href="/app">Open the dashboard</a>
+      <a class="btn ghost large" href="#how">See how it works</a>
+    </div>
+    <div class="strip">
+      <div><strong>5 / day</strong><span>YouTube Shorts schedule</span></div>
+      <div><strong>10 / day</strong><span>TikTok schedule</span></div>
+      <div><strong>9:16</strong><span>Blurred-background vertical</span></div>
+      <div><strong>2</strong><span>Independent queues and logins</span></div>
+    </div>
+  </section>
+
+  <section class="section container" id="features">
+    <h2>Everything between "long video" and "posted"</h2>
+    <p class="sub">Built for creators and agencies who publish clips every day and are tired of doing it by hand.</p>
+    <div class="features">
+      <div class="feature"><div class="ico">1</div><h3>Context-aware clipping</h3><p>Cuts follow your chapters or the pauses and sentence ends in a transcript, so a clip does not stop mid-thought. Without either, videos are split into equal parts.</p></div>
+      <div class="feature"><div class="ico">2</div><h3>Automatic video length</h3><p>Paste a list of links. The length of each video is read straight from the file, so there are no durations to type.</p></div>
+      <div class="feature"><div class="ico">3</div><h3>Fixed daily rhythm</h3><p>Posts land in set time slots, 5 a day on YouTube and 10 a day on TikTok. When one video runs out, the next one in your list takes over.</p></div>
+      <div class="feature"><div class="ico">4</div><h3>Two separate dashboards</h3><p>YouTube and TikTok each have their own login, CSV, queue and statistics. One never holds up the other.</p></div>
+      <div class="feature"><div class="ico">5</div><h3>Live numbers</h3><p>See what was posted, what is scheduled, what failed and what is publishing right now, with a day-by-day chart.</p></div>
+      <div class="feature"><div class="ico">6</div><h3>Retries and safe logins</h3><p>Failed posts can be retried with one click. Accounts connect through the official Google and TikTok sign-in screens, and you can disconnect at any time.</p></div>
+    </div>
+  </section>
+
+  <section class="section container" id="how">
+    <h2>Up and running in three steps</h2>
+    <p class="sub">No video editor, no manual uploads.</p>
+    <div class="steps">
+      <div class="step"><h3>Connect your accounts</h3><p>Sign in to YouTube and TikTok from each platform's Settings tab. Each one has its own login.</p></div>
+      <div class="step"><h3>Upload a CSV per platform</h3><p>One row per video, in the order you want them used. Add chapters or a transcript link if you want cuts at natural breaks.</p></div>
+      <div class="step"><h3>Let the queue run</h3><p>Clips are cut, scheduled and posted automatically. Check the dashboard to see progress and retry anything that failed.</p></div>
+    </div>
+  </section>
+
+  <section class="section container" id="platforms">
+    <h2>One tool, two platforms, two playbooks</h2>
+    <p class="sub">Each platform is tuned separately.</p>
+    <div class="grid2">
+      <div class="plat yt">
+        <span class="ico-lg"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="#ff3b3b"/></svg></span>
+        <h3>YouTube Shorts</h3>
+        <div class="big">5 posts a day</div>
+        <ul>
+          <li>Uploads through the official YouTube Data API</li>
+          <li>Titles with "Part 2/5" numbering and an automatic #Shorts tag</li>
+          <li>Retries on its own if the daily API quota is reached</li>
+        </ul>
+      </div>
+      <div class="plat tt">
+        <span class="ico-lg"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3v11.2a3.8 3.8 0 1 1-3-3.7V7.4a7 7 0 1 0 6 6.9V9.2c1 .7 2.2 1.1 3.5 1.1V7.2c-1.9 0-3.5-1.6-3.5-4.2z"/></svg></span>
+        <h3>TikTok</h3>
+        <div class="big">10 posts a day</div>
+        <ul>
+          <li>Uploads through the official TikTok Content Posting API</li>
+          <li>Inbox mode delivers each clip for you to publish, or direct posting once TikTok approves the app</li>
+          <li>Waits and retries when TikTok's pending-upload limit is reached</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container faq" id="faq">
+    <h2>Questions people ask</h2>
+    <p class="sub">Straight answers, including the limits.</p>
+    <details><summary>Will my posts be public right away?</summary><p>That depends on each platform's review of this app. Until YouTube completes its API audit, uploads made through the API are held as private. Until TikTok approves direct posting, clips are delivered to your TikTok inbox or posted as private. Once the platforms approve the app, posts follow the privacy setting you choose.</p></details>
+    <details><summary>Does it work with YouTube page links or Google Drive links?</summary><p>Video lengths are detected from direct MP4 or MOV file links. For other link types, add the duration in the CSV yourself.</p></details>
+    <details><summary>Can I post the same clip on both platforms?</summary><p>Yes. The two queues are independent, so the same video can appear in both CSVs. There is also an option to keep identical clips at least 24 hours apart.</p></details>
+    <details><summary>What happens if a post fails?</summary><p>It is marked as failed with the reason, and you can retry it from the dashboard. Quota and rate-limit errors are retried automatically.</p></details>
+    <details><summary>What do you store about me?</summary><p>Only what is needed to post for you: the connection tokens for your accounts and your queue of clips. See the <a href="/privacy">Privacy Policy</a> for details, including how to disconnect and delete your data.</p></details>
+  </section>
+
+  <section class="section container" style="text-align:center">
+    <h2>Ready to fill your queue?</h2>
+    <p class="sub">Log in and connect your first platform in a couple of minutes.</p>
+    <a class="btn large" href="/app">Log in to Clip Studio</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <strong style="color:var(--text)">Clip Studio</strong><br>
+      Operated by Zeecomedia Tech Enterprises, Lagos, Nigeria.<br>
+      Contact: <a href="mailto:REPLACE_ME_EMAIL" style="margin:0">REPLACE_ME_EMAIL</a>
+    </div>
+    <div>
+      <a href="/terms">Terms of Service</a><a href="/privacy">Privacy Policy</a><a href="/app">Log in</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

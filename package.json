@@ -1,0 +1,13 @@
+{
+  "name": "clip-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Slices long 16:9 videos into 60-second 9:16 clips with Cloudinary and schedules them to YouTube and TikTok.",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "cloudinary": "^2.5.1"
+  }
+}
