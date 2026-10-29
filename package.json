@@ -1,0 +1,30 @@
+{
+  "name": "video-factory",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Makes original short motion-graphics videos about coding, tech and AI, then schedules them through Clip Studio.",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "music": "node scripts/make-music.mjs",
+    "factory": "node scripts/factory.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/test-spec.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.535",
+    "@remotion/cli": "4.0.535",
+    "@remotion/fonts": "4.0.535",
+    "@remotion/renderer": "4.0.535",
+    "cloudinary": "^2.5.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.535"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "5.2.8",
+    "@fontsource/jetbrains-mono": "5.2.8",
+    "@types/react": "18.3.12",
+    "typescript": "5.9.3"
+  }
+}
